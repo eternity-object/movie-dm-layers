@@ -26,7 +26,7 @@ public class ReservationService {
     public Reservation reserveScreening(Long customerId, Long screeningId, Integer audienceCount) {
         Customer customer = customerRepository.findById(customerId).get();
         Screening screening = screeningRepository.findById(screeningId).get();
-        Movie movie = movieRepository.findById(screening.getId()).get();
+        Movie movie = movieRepository.findAggregateById(screening.getId()).get();
 
         Reservation reservation = screening.reserve(movie, customer, audienceCount);
 

@@ -37,7 +37,7 @@ public class Movie {
     @Version
     private long version;
 
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name="POLICY_ID")
     private DiscountPolicy discountPolicy;
 

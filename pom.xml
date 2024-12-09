@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.eternity</groupId>
-	<artifactId>movie-dm-aggregate</artifactId>
+	<artifactId>movie-dm-layers</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>movie</name>
 	<description>Movie Reservation for JPA</description>
